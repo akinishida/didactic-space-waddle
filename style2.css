@@ -1,0 +1,437 @@
+/* ===========================
+   西田亜季 Official Website
+   style2.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:linear-gradient(to bottom,#dff6ff,#cdefff);
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    color:#24507a;
+    line-height:1.8;
+}
+
+/* 全体 */
+
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+/* ヘッダー */
+
+header{
+    background:linear-gradient(135deg,#42a5f5,#1976d2);
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+    border-radius:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    margin-bottom:35px;
+}
+
+/* 星 */
+
+.header-stars{
+    display:flex;
+    justify-content:space-between;
+    color:#ffd84d;
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+/* アイコン */
+
+.icon{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #fff;
+    background:#fff;
+    margin-bottom:20px;
+}
+
+/* 名前 */
+
+h1{
+    font-size:44px;
+    color:#fff;
+    letter-spacing:3px;
+    margin-bottom:8px;
+}
+
+/* サブタイトル */
+
+.subtitle{
+    font-size:20px;
+    color:#eef8ff;
+    letter-spacing:2px;
+}
+
+/* ナビ */
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:30px;
+}
+
+nav button{
+    background:#fff;
+    color:#1976d2;
+    border:none;
+    border-radius:30px;
+    padding:12px 22px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+nav button:hover{
+    background:#fff176;
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+}
+
+/* ヒーロー */
+
+.hero{
+    background:linear-gradient(135deg,#9edfff,#dff6ff,#ffffff);
+    border-radius:35px;
+    padding:80px 40px;
+    margin:40px 0;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.hero::before{
+    content:"☁️";
+    position:absolute;
+    top:15px;
+    left:40px;
+    font-size:90px;
+    opacity:.25;
+}
+
+.hero::after{
+    content:"☁️";
+    position:absolute;
+    bottom:15px;
+    right:40px;
+    font-size:90px;
+    opacity:.25;
+}
+
+.hero h2{
+    color:#1565c0;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:12px;
+}
+
+/* ボタン */
+
+.link-button{
+    display:inline-block;
+    margin-top:25px;
+    background:#2f80ed;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:35px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.link-button:hover{
+    background:#6ec6ff;
+    transform:scale(1.05);
+}
+
+
+/* ===========================
+   クイックメニュー
+=========================== */
+
+.quick-menu{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin:40px 0;
+}
+
+.quick-menu .card{
+    cursor:pointer;
+}
+
+.quick-menu .card:hover{
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   ページ
+=========================== */
+
+.page{
+    margin-bottom:50px;
+}
+
+h2{
+    color:#1565c0;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+/* ===========================
+   カード
+=========================== */
+
+.card{
+    background:#ffffff;
+    border-radius:25px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+}
+
+.card h3{
+    color:#1976d2;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:18px;
+    margin-bottom:12px;
+}
+
+/* ===========================
+   プロフィールサブメニュー
+=========================== */
+
+.subnav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:25px 0 35px;
+}
+
+.subnav button{
+    background:#42a5f5;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    padding:12px 24px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.subnav button:hover{
+    background:#1976d2;
+    transform:translateY(-3px);
+}
+
+/* プロフィール切替 */
+
+.profile-page{
+    display:none;
+}
+
+#intro{
+    display:block;
+}
+
+/* ===========================
+   本文
+=========================== */
+
+p{
+    color:#24507a;
+    line-height:1.9;
+}
+
+a{
+    color:#1976d2;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+
+/* ===========================
+   活動動画
+=========================== */
+
+video{
+    width:100%;
+    border-radius:20px;
+    margin-top:15px;
+    margin-bottom:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* ===========================
+   写真ギャラリー
+=========================== */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    background:#fff;
+    padding:6px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+/* ===========================
+   ライトボックス
+=========================== */
+
+.lightbox{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.85);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(255,255,255,.2);
+}
+
+/* ===========================
+   フッター
+=========================== */
+
+footer{
+    margin-top:60px;
+    padding:30px;
+    text-align:center;
+    color:#fff;
+    font-size:18px;
+    letter-spacing:2px;
+    background:linear-gradient(135deg,#42a5f5,#1976d2);
+    border-radius:25px;
+    box-shadow:0 -6px 20px rgba(0,0,0,.15);
+}
+
+/* ===========================
+   スマホ対応
+=========================== */
+
+@media (max-width:768px){
+
+    .container{
+        width:95%;
+        margin:15px auto;
+    }
+
+    header{
+        padding:25px 15px;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    .subtitle{
+        font-size:18px;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    nav button{
+        width:90%;
+        max-width:320px;
+    }
+
+    .hero{
+        padding:45px 20px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .quick-menu{
+        grid-template-columns:1fr;
+    }
+
+    h2{
+        font-size:26px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .card h3{
+        font-size:22px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .gallery img{
+        height:200px;
+    }
+
+}
